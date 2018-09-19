@@ -23,11 +23,13 @@ An official kube-arbitrator image is provided and you can download it from [Dock
 # git clone git@github.com:kubernetes-incubator/kube-arbitrator.git
 ```
 
-#### Deploys `kube-arbitrator` by Helm
+#### Deploys `kube-arbitrator` by Helm (helm installation,please refer to https://docs.helm.sh/using_helm/#installing-helm )
 
-Run the `kube-arbitrator` as kubernetes scheduler
+Run the `kube-arbitrator` as kubernetes scheduler. 
 
 ```bash
+# cd $GOPATH/src/github.com/kubernetes-incubator/kube-arbitrator
+# kubectl   create   -f  example/role.yaml
 # helm install $GOPATH/src/github.com/kubernetes-incubator/kube-arbitrator/deployment/kube-arbitrator --namespace kube-system
 ```
 
